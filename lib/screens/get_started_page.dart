@@ -274,26 +274,31 @@ class _GetStartedPageState extends State<GetStartedPage> {
                     ),
                     CustomListTile(
                       title: 'What is Blaja?',
+                      description: 'This is description of the expanded text',
                       trailing: isClicked ? Icons.arrow_forward_ios : Icons.add,
                       onClick: onClick,
                     ),
                     CustomListTile(
                       title: 'How Much does Blaja Cost?',
+                      description: 'This is description of the expanded text',
                       trailing: isClicked ? Icons.arrow_forward_ios : Icons.add,
                       onClick: onClick,
                     ),
                     CustomListTile(
                       title: 'Where can I watch',
+                      description: 'This is description of the expanded text',
                       trailing: isClicked ? Icons.arrow_forward_ios : Icons.add,
                       onClick: onClick,
                     ),
                     CustomListTile(
                       title: 'How do I Cancel',
+                      description: 'This is description of the expanded text',
                       trailing: isClicked ? Icons.arrow_forward_ios : Icons.add,
                       onClick: onClick,
                     ),
                     CustomListTile(
                       title: 'What can I watch on Blaja?',
+                      description: 'This is description of the expanded text',
                       trailing: isClicked ? Icons.arrow_forward_ios : Icons.add,
                       onClick: onClick,
                     ),

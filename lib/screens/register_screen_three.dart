@@ -18,11 +18,12 @@ class RegisterScreenThree extends StatelessWidget {
           onTap: () {
             FocusScope.of(context).requestFocus(FocusNode());
           },
-          child: SingleChildScrollView(
-            child: Container(
-              width: WidgetProperties.screenWidth(context),
+          child: Container(
+            height: WidgetProperties.screenHeight(context),
+            width: WidgetProperties.screenWidth(context),
+            child: SingleChildScrollView(
               child: Column(
-                mainAxisAlignment: MainAxisAlignment.start,
+                mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
                   Padding(
@@ -105,118 +106,364 @@ class RegisterScreenThree extends StatelessWidget {
                           crossAxisAlignment: CrossAxisAlignment.center,
                           children: [
                             SizedBox(
-                              width: 170,
+                              width: 300,
                             ),
                             Image.asset(
                               'assets/images/basic.png',
-                              width: 80,
-                              height: 70,
+                              width: 70,
+                              height: 60,
                             ),
                             SizedBox(
-                              width: 70,
+                              width: 10,
                             ),
                             Image.asset(
                               'assets/images/standard.png',
-                              width: 80,
-                              height: 70,
+                              width: 70,
+                              height: 60,
                             ),
                             SizedBox(
-                              width: 60,
+                              width: 10,
                             ),
                             Image.asset(
                               'assets/images/premium.png',
-                              width: 80,
-                              height: 70,
+                              width: 70,
+                              height: 60,
                             ),
                           ],
                         ),
                         SizedBox(
-                          height: 10,
+                          height: 20,
                         ),
-                        PlanList(
-                          title: 'Monthly Price',
-                          firstCol: Text('Rs 950'),
-                          secondCol: Text('Rs 950'),
-                          thirdCol: Text('Rs 950'),
+                        Column(
+                          mainAxisAlignment: MainAxisAlignment.start,
+                          crossAxisAlignment: CrossAxisAlignment.start,
+                          children: [
+                            Padding(
+                              padding: const EdgeInsets.only(right: 20.0),
+                              child: Row(
+                                mainAxisAlignment:
+                                    MainAxisAlignment.spaceBetween,
+                                crossAxisAlignment: CrossAxisAlignment.center,
+                                children: [
+                                  Text(
+                                    'Monthly Price',
+                                    style: TextStyle(fontSize: 12),
+                                  ),
+                                  SizedBox(
+                                    width: 120,
+                                  ),
+                                  Text(
+                                    'Rs 950',
+                                    style: TextStyle(fontSize: 10),
+                                  ),
+                                  Text(
+                                    'Rs 950',
+                                    style: TextStyle(fontSize: 10),
+                                  ),
+                                  Text(
+                                    'Rs 950',
+                                    style: TextStyle(fontSize: 10),
+                                  ),
+                                ],
+                              ),
+                            ),
+                            SizedBox(
+                              height: 15,
+                            ),
+                            Divider(
+                              height: 1,
+                              color: Colors.grey,
+                            ),
+                            SizedBox(
+                              height: 15,
+                            ),
+                          ],
                         ),
-                        PlanList(
-                          title: 'Video quality',
-                          firstCol: Text('Good'),
-                          secondCol: Text('Better'),
-                          thirdCol: Text('Best'),
+                        Column(
+                          mainAxisAlignment: MainAxisAlignment.start,
+                          crossAxisAlignment: CrossAxisAlignment.start,
+                          children: [
+                            Padding(
+                              padding: const EdgeInsets.only(right: 25.0),
+                              child: Row(
+                                mainAxisAlignment:
+                                    MainAxisAlignment.spaceBetween,
+                                crossAxisAlignment: CrossAxisAlignment.center,
+                                children: [
+                                  Text(
+                                    'Video quality',
+                                    style: TextStyle(fontSize: 12),
+                                  ),
+                                  SizedBox(
+                                    width: 110,
+                                  ),
+                                  Text(
+                                    'Good',
+                                    style: TextStyle(fontSize: 10),
+                                  ),
+                                  Text(
+                                    'Better',
+                                    style: TextStyle(fontSize: 10),
+                                  ),
+                                  Text(
+                                    'Best',
+                                    style: TextStyle(fontSize: 10),
+                                  ),
+                                ],
+                              ),
+                            ),
+                            SizedBox(
+                              height: 15,
+                            ),
+                            Divider(
+                              height: 1,
+                              color: Colors.grey,
+                            ),
+                            SizedBox(
+                              height: 15,
+                            ),
+                          ],
                         ),
-                        PlanList(
-                          title: 'Resolution  ',
-                          firstCol: Text('480p'),
-                          secondCol: Text('1080p'),
-                          thirdCol: Text('4K+HDR'),
+                        Column(
+                          mainAxisAlignment: MainAxisAlignment.start,
+                          crossAxisAlignment: CrossAxisAlignment.start,
+                          children: [
+                            Padding(
+                              padding: const EdgeInsets.only(right: 15.0),
+                              child: Row(
+                                mainAxisAlignment:
+                                    MainAxisAlignment.spaceBetween,
+                                crossAxisAlignment: CrossAxisAlignment.center,
+                                children: [
+                                  Text(
+                                    'Resolution',
+                                    style: TextStyle(fontSize: 12),
+                                  ),
+                                  SizedBox(
+                                    width: 130,
+                                  ),
+                                  Text(
+                                    '480p',
+                                    style: TextStyle(fontSize: 10),
+                                  ),
+                                  Text(
+                                    '1080p',
+                                    style: TextStyle(fontSize: 10),
+                                  ),
+                                  Text(
+                                    '4K+HDR',
+                                    style: TextStyle(fontSize: 10),
+                                  ),
+                                ],
+                              ),
+                            ),
+                            SizedBox(
+                              height: 15,
+                            ),
+                            Divider(
+                              height: 1,
+                              color: Colors.grey,
+                            ),
+                            SizedBox(
+                              height: 15,
+                            ),
+                          ],
                         ),
-                        PlanList(
-                          title: 'Screens you can watch on at the same time',
-                          firstCol: Text('1'),
-                          secondCol: Text('2'),
-                          thirdCol: Text('4'),
+                        Column(
+                          mainAxisAlignment: MainAxisAlignment.start,
+                          crossAxisAlignment: CrossAxisAlignment.start,
+                          children: [
+                            Padding(
+                              padding: const EdgeInsets.only(right: 30.0),
+                              child: Row(
+                                mainAxisAlignment:
+                                    MainAxisAlignment.spaceBetween,
+                                crossAxisAlignment: CrossAxisAlignment.center,
+                                children: [
+                                  Text(
+                                    'Screens you can watch on at the same time',
+                                    style: TextStyle(fontSize: 12),
+                                  ),
+                                  Text(
+                                    '1',
+                                    style: TextStyle(fontSize: 10),
+                                  ),
+                                  Text(
+                                    '2',
+                                    style: TextStyle(fontSize: 10),
+                                  ),
+                                  Text(
+                                    '4',
+                                    style: TextStyle(fontSize: 10),
+                                  ),
+                                ],
+                              ),
+                            ),
+                            SizedBox(
+                              height: 15,
+                            ),
+                            Divider(
+                              height: 1,
+                              color: Colors.grey,
+                            ),
+                            SizedBox(
+                              height: 15,
+                            ),
+                          ],
                         ),
-                        PlanList(
-                          title:
-                              'Watch on your TV, computer, mobile phone and tablet',
-                          firstCol: Image.asset(
-                            'assets/images/red_click.png',
-                            width: 15,
-                            height: 10,
-                          ),
-                          secondCol: Image.asset(
-                            'assets/images/red_click.png',
-                            width: 15,
-                            height: 10,
-                          ),
-                          thirdCol: Image.asset(
-                            'assets/images/red_click.png',
-                            width: 15,
-                            height: 10,
-                          ),
+                        Column(
+                          mainAxisAlignment: MainAxisAlignment.start,
+                          crossAxisAlignment: CrossAxisAlignment.start,
+                          children: [
+                            Padding(
+                              padding: const EdgeInsets.only(right: 20.0),
+                              child: Row(
+                                mainAxisAlignment:
+                                    MainAxisAlignment.spaceBetween,
+                                crossAxisAlignment: CrossAxisAlignment.center,
+                                children: [
+                                  Text(
+                                    'Watch on your TV, computer, mobile phone and tablet',
+                                    style: TextStyle(fontSize: 12),
+                                  ),
+                                  Image.asset(
+                                    'assets/images/red_click.png',
+                                    width: 15,
+                                    height: 10,
+                                  ),
+                                  SizedBox(
+                                    width: 20,
+                                  ),
+                                  Image.asset(
+                                    'assets/images/red_click.png',
+                                    width: 15,
+                                    height: 10,
+                                  ),
+                                  SizedBox(
+                                    width: 20,
+                                  ),
+                                  Image.asset(
+                                    'assets/images/red_click.png',
+                                    width: 15,
+                                    height: 10,
+                                  ),
+                                ],
+                              ),
+                            ),
+                            SizedBox(
+                              height: 15,
+                            ),
+                            Divider(
+                              height: 1,
+                              color: Colors.grey,
+                            ),
+                            SizedBox(
+                              height: 15,
+                            ),
+                          ],
                         ),
-                        PlanList(
-                          title: 'Unlimited movies and TV shows',
-                          firstCol: Image.asset(
-                            'assets/images/red_click.png',
-                            width: 15,
-                            height: 10,
-                          ),
-                          secondCol: Image.asset(
-                            'assets/images/red_click.png',
-                            width: 15,
-                            height: 10,
-                          ),
-                          thirdCol: Image.asset(
-                            'assets/images/red_click.png',
-                            width: 15,
-                            height: 10,
-                          ),
+                        Column(
+                          mainAxisAlignment: MainAxisAlignment.start,
+                          crossAxisAlignment: CrossAxisAlignment.start,
+                          children: [
+                            Padding(
+                              padding: const EdgeInsets.only(right: 20.0),
+                              child: Row(
+                                mainAxisAlignment:
+                                    MainAxisAlignment.spaceBetween,
+                                crossAxisAlignment: CrossAxisAlignment.center,
+                                children: [
+                                  Text(
+                                    'Unlimited movies and TV shows',
+                                    style: TextStyle(fontSize: 12),
+                                  ),
+                                  Padding(
+                                    padding: const EdgeInsets.only(left: 58.0),
+                                    child: Image.asset(
+                                      'assets/images/red_click.png',
+                                      width: 15,
+                                      height: 10,
+                                    ),
+                                  ),
+                                  Image.asset(
+                                    'assets/images/red_click.png',
+                                    width: 15,
+                                    height: 10,
+                                  ),
+                                  Image.asset(
+                                    'assets/images/red_click.png',
+                                    width: 15,
+                                    height: 10,
+                                  ),
+                                ],
+                              ),
+                            ),
+                            SizedBox(
+                              height: 15,
+                            ),
+                            Divider(
+                              height: 1,
+                              color: Colors.grey,
+                            ),
+                            SizedBox(
+                              height: 15,
+                            ),
+                          ],
                         ),
-                        PlanList(
-                          title: 'Cancel anytime',
-                          firstCol: Image.asset(
-                            'assets/images/red_click.png',
-                            width: 15,
-                            height: 10,
-                          ),
-                          secondCol: Image.asset(
-                            'assets/images/red_click.png',
-                            width: 15,
-                            height: 10,
-                          ),
-                          thirdCol: Image.asset(
-                            'assets/images/red_click.png',
-                            width: 15,
-                            height: 10,
-                          ),
+                        Column(
+                          mainAxisAlignment: MainAxisAlignment.start,
+                          crossAxisAlignment: CrossAxisAlignment.start,
+                          children: [
+                            Padding(
+                              padding: const EdgeInsets.only(right: 20.0),
+                              child: Row(
+                                mainAxisAlignment:
+                                    MainAxisAlignment.spaceBetween,
+                                crossAxisAlignment: CrossAxisAlignment.center,
+                                children: [
+                                  Text(
+                                    'Cancel anytime',
+                                    style: TextStyle(fontSize: 12),
+                                  ),
+                                  Padding(
+                                    padding: const EdgeInsets.only(left: 140.0),
+                                    child: Image.asset(
+                                      'assets/images/red_click.png',
+                                      width: 15,
+                                      height: 10,
+                                    ),
+                                  ),
+                                  Image.asset(
+                                    'assets/images/red_click.png',
+                                    width: 15,
+                                    height: 10,
+                                  ),
+                                  Image.asset(
+                                    'assets/images/red_click.png',
+                                    width: 15,
+                                    height: 10,
+                                  ),
+                                ],
+                              ),
+                            ),
+                            SizedBox(
+                              height: 15,
+                            ),
+                            Divider(
+                              height: 1,
+                              color: Colors.grey,
+                            ),
+                            SizedBox(
+                              height: 15,
+                            ),
+                          ],
                         ),
+
                         RichText(
                           text: TextSpan(
                             text:
                                 'Full HD (1080p), Ultra HD (4K) and HDR availability subject to your internet service and device capabilities. Not all content available in HD, Full HD, Ultra HD or HDR. See ',
-                            style: TextStyle(color: Colors.grey),
+                            style: TextStyle(fontSize: 12, color: Colors.grey),
                             children: <TextSpan>[
                               TextSpan(
                                 text: ' Terms of Use ',

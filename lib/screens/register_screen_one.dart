@@ -1,4 +1,5 @@
 import 'package:blaja_app/common/constants.dart';
+import 'package:blaja_app/common/widget_properties.dart';
 import 'package:blaja_app/screens/register_screen_two.dart';
 import 'package:blaja_app/widgets/custom_textform_field.dart';
 import 'package:blaja_app/widgets/custome_text_view_bold.dart';
@@ -16,10 +17,12 @@ class RegisterScreenOne extends StatelessWidget {
           onTap: () {
             FocusScope.of(context).requestFocus(FocusNode());
           },
-          child: SingleChildScrollView(
-            child: Container(
+          child: Container(
+            width: WidgetProperties.screenWidth(context),
+            height: WidgetProperties.screenHeight(context),
+            child: SingleChildScrollView(
               child: Column(
-                mainAxisAlignment: MainAxisAlignment.start,
+                mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 crossAxisAlignment: CrossAxisAlignment.center,
                 children: [
                   Padding(

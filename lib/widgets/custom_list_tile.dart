@@ -3,11 +3,11 @@ import 'package:flutter/material.dart';
 
 class CustomListTile extends StatelessWidget {
   final String title;
+  final String description;
   final IconData trailing;
   final Function onClick;
 
-  const CustomListTile({Key key, this.title, this.trailing, this.onClick})
-      : super(key: key);
+  const CustomListTile({ this.title,this.description, this.trailing, this.onClick});
   @override
   Widget build(BuildContext context) {
     return Container(
@@ -25,7 +25,7 @@ class CustomListTile extends StatelessWidget {
         ),
         children: [
           Container(
-            child: Text('Some text here'),
+            child: Text(description,style: Constants.textLight,),
           )
         ],
         //onTap: onClick,

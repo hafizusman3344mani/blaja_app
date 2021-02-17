@@ -17,8 +17,10 @@ class RegisterScreenTwo extends StatelessWidget {
           onTap: () {
             FocusScope.of(context).requestFocus(FocusNode());
           },
-          child: SingleChildScrollView(
-            child: Container(
+          child: Container(
+            width: WidgetProperties.screenWidth(context),
+            height: WidgetProperties.screenHeight(context),
+            child: SingleChildScrollView(
               child: Column(
                 mainAxisAlignment: MainAxisAlignment.start,
                 crossAxisAlignment: CrossAxisAlignment.center,
