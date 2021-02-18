@@ -6,6 +6,7 @@ class GenericButton extends StatelessWidget {
   final double width;
   final String text;
   final double fontSize;
+  final TextStyle textStyle;
   final Color color;
   final TextAlign textAlign;
   final Function onPressed;
@@ -16,7 +17,7 @@ class GenericButton extends StatelessWidget {
     @required this.text,
     this.color,
     this.height,
-
+this.textStyle,
     this.width,
     this.fontSize,
     this.textAlign,
@@ -34,7 +35,7 @@ class GenericButton extends StatelessWidget {
           children: [
             Text(
               text,
-              style: TextStyle(
+              style:textStyle!=null?textStyle: TextStyle(
                   color: Colors.white,
                   fontSize: fontSize ?? null,
                   fontWeight: FontWeight.bold),

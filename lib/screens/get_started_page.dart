@@ -3,6 +3,7 @@ import 'dart:ui';
 import 'package:blaja_app/common/constants.dart';
 import 'package:blaja_app/common/widget_properties.dart';
 import 'package:blaja_app/screens/register_screen_one.dart';
+import 'package:blaja_app/screens/signin_screen.dart';
 import 'package:blaja_app/widgets/custom_edittext.dart';
 import 'package:blaja_app/widgets/custom_list_tile.dart';
 import 'package:blaja_app/widgets/custome_text_view_bold.dart';
@@ -39,7 +40,7 @@ class _GetStartedPageState extends State<GetStartedPage> {
                           // color: Colors.green.withOpacity(0.2),
                           image: DecorationImage(
                               image: AssetImage('assets/images/first.png'),
-                              fit: BoxFit.fill)),
+                              fit: BoxFit.fill),),
                     ),
                   ),
                   Container(
@@ -120,7 +121,9 @@ class _GetStartedPageState extends State<GetStartedPage> {
                     right: 30,
                     top: 30,
                     child: GenericButton(
-                      onPressed: () {},
+                      onPressed: () {
+                        Navigator.push(context, MaterialPageRoute(builder: (context)=>SignIn()));
+                      },
                       // height: 35,
                       color: Color(0xFFE50914),
                       text: 'Sign In',

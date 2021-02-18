@@ -10,6 +10,8 @@ class Constants {
 
   static const double lightFontSize = 20;
 
+  static const double hintFontSize = 20;
+
   //**************Text Style Light********************
   static TextStyle textBold = TextStyle(
     fontFamily: 'Sans',
@@ -48,5 +50,10 @@ class Constants {
     fontFamily: 'Sans',
     fontSize: Constants.lightFontSize,
     color:Color(0xFF4d4d4d),
+  );
+
+  static TextStyle hintLight = TextStyle(
+    fontSize: Constants.hintFontSize,
+    color:Color(0xFFBCBCBC),
   );
 }

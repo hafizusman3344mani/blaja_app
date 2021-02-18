@@ -1,6 +1,7 @@
 import 'package:blaja_app/common/constants.dart';
 import 'package:blaja_app/common/widget_properties.dart';
 import 'package:blaja_app/screens/register_screen_two.dart';
+import 'package:blaja_app/screens/signin_screen.dart';
 import 'package:blaja_app/widgets/custom_textform_field.dart';
 import 'package:blaja_app/widgets/custome_text_view_bold.dart';
 import 'package:blaja_app/widgets/footer.dart';
@@ -38,7 +39,9 @@ class RegisterScreenOne extends StatelessWidget {
                           height: 80,
                         ),
                         FlatButton(
-                          onPressed: () {},
+                          onPressed: () {
+                            Navigator.push(context, MaterialPageRoute(builder: (context)=>SignIn()));
+                          },
                           child: Text('Sign In'),
                         ),
                       ],
@@ -122,6 +125,7 @@ class RegisterScreenOne extends StatelessWidget {
                               right: 50, top: 10, bottom: 50),
                           child: CustomTextFormField(
                             hintText: 'Enter your password',
+                            borderColor: Color(0xFF4D4D4D),
                           ),
                         ),
                         Padding(
