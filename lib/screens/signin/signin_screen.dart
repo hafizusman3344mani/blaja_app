@@ -1,6 +1,6 @@
 import 'package:blaja_app/common/constants.dart';
 import 'package:blaja_app/common/widget_properties.dart';
-import 'package:blaja_app/screens/signin_screen_two.dart';
+import 'package:blaja_app/screens/signin/signin_screen_two.dart';
 import 'package:blaja_app/widgets/custom_textform_field.dart';
 import 'package:blaja_app/widgets/footer.dart';
 import 'package:blaja_app/widgets/generic_button.dart';

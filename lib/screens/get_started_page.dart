@@ -1,9 +1,8 @@
 import 'dart:ui';
-
 import 'package:blaja_app/common/constants.dart';
 import 'package:blaja_app/common/widget_properties.dart';
-import 'package:blaja_app/screens/register_screen_one.dart';
-import 'package:blaja_app/screens/signin_screen.dart';
+import 'package:blaja_app/screens/register/register_screen_one.dart';
+import 'package:blaja_app/screens/signin/signin_screen.dart';
 import 'package:blaja_app/widgets/custom_edittext.dart';
 import 'package:blaja_app/widgets/custom_list_tile.dart';
 import 'package:blaja_app/widgets/custome_text_view_bold.dart';

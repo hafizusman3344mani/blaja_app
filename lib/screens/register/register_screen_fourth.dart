@@ -1,5 +1,6 @@
 import 'package:blaja_app/common/constants.dart';
 import 'package:blaja_app/common/widget_properties.dart';
+import 'package:blaja_app/screens/dashboard/dashbord_home.dart';
 import 'package:blaja_app/widgets/custome_text_view_bold.dart';
 import 'package:blaja_app/widgets/footer.dart';
 import 'package:flutter/material.dart';
@@ -144,88 +145,98 @@ class RegisterScreenFourth extends StatelessWidget {
                             ],
                           ),
                         ),
-                        Container(
-                          alignment: Alignment.centerRight,
-                          //padding: EdgeInsets.symmetric(vertical: 10,horizontal: 50),
-                          decoration: BoxDecoration(
-                            border: Border.all(color: Colors.grey, width: 1),
-                            borderRadius: BorderRadius.circular(3),
-                          ),
-                          child: ListTile(
-                            title: Row(
-                              children: [
-                                Expanded(
-                                  child: Row(
-                                    children: [
-                                      Text(
-                                        'Credit or Debit Card',
-                                        style: TextStyle(fontSize: 16),
-                                      ),
-                                      SizedBox(
-                                        width: 20,
-                                      ),
-                                      SvgPicture.asset(
-                                        'assets/svgs/visa.svg',
-                                        width: 30,
-                                        height: 30,
-                                        fit: BoxFit.fill,
-                                      ),
-                                      SizedBox(
-                                        width: 10,
-                                      ),
-                                      SvgPicture.asset(
-                                          'assets/svgs/mastercard.svg',
+                        GestureDetector(
+                          onTap:(){
+                            Navigator.push(context, MaterialPageRoute(builder: (context)=>DashBoardHome(),),);
+                          },
+                          child: Container(
+                            alignment: Alignment.centerRight,
+                            //padding: EdgeInsets.symmetric(vertical: 10,horizontal: 50),
+                            decoration: BoxDecoration(
+                              border: Border.all(color: Colors.grey, width: 1),
+                              borderRadius: BorderRadius.circular(3),
+                            ),
+                            child: ListTile(
+                              title: Row(
+                                children: [
+                                  Expanded(
+                                    child: Row(
+                                      children: [
+                                        Text(
+                                          'Credit or Debit Card',
+                                          style: TextStyle(fontSize: 16),
+                                        ),
+                                        SizedBox(
+                                          width: 20,
+                                        ),
+                                        SvgPicture.asset(
+                                          'assets/svgs/visa.svg',
                                           width: 30,
-                                          height: 30),
-                                      SizedBox(
-                                        width: 10,
-                                      ),
-                                      SvgPicture.asset(
-                                          'assets/svgs/american.svg',
-                                          width: 30,
-                                          height: 30),
-                                    ],
+                                          height: 30,
+                                          fit: BoxFit.fill,
+                                        ),
+                                        SizedBox(
+                                          width: 10,
+                                        ),
+                                        SvgPicture.asset(
+                                            'assets/svgs/mastercard.svg',
+                                            width: 30,
+                                            height: 30),
+                                        SizedBox(
+                                          width: 10,
+                                        ),
+                                        SvgPicture.asset(
+                                            'assets/svgs/american.svg',
+                                            width: 30,
+                                            height: 30),
+                                      ],
+                                    ),
                                   ),
-                                ),
-                                Icon(Icons.arrow_forward_ios),
-                              ],
+                                  Icon(Icons.arrow_forward_ios),
+                                ],
+                              ),
                             ),
                           ),
                         ),
                         SizedBox(
                           height: 5,
                         ),
-                        Container(
-                          alignment: Alignment.centerRight,
-                          //padding: EdgeInsets.symmetric(vertical: 10,horizontal: 50),
-                          decoration: BoxDecoration(
-                            border: Border.all(color: Colors.grey, width: 1),
-                            borderRadius: BorderRadius.circular(3),
-                          ),
-                          child: ListTile(
-                            title: Row(
-                              children: [
-                                Expanded(
-                                  child: Row(
-                                    children: [
-                                      Text(
-                                        'Credit or Debit Card',
-                                        style: TextStyle(fontSize: 16),
-                                      ),
-                                      SizedBox(
-                                        width: 20,
-                                      ),
-                                      SvgPicture.asset(
-                                        'assets/svgs/telenor.svg',
-                                        width: 20,
-                                        height: 18,
+                        GestureDetector(
+                          onTap:(){
+                            Navigator.push(context, MaterialPageRoute(builder: (context)=>DashBoardHome(),),);
+                          },
+                          child: Container(
+                            alignment: Alignment.centerRight,
+                            //padding: EdgeInsets.symmetric(vertical: 10,horizontal: 50),
+                            decoration: BoxDecoration(
+                              border: Border.all(color: Colors.grey, width: 1),
+                              borderRadius: BorderRadius.circular(3),
+                            ),
+                            child: ListTile(
+                              title: Row(
+                                children: [
+                                  Expanded(
+                                    child: Row(
+                                      children: [
+                                        Text(
+                                          'Credit or Debit Card',
+                                          style: TextStyle(fontSize: 16),
+                                        ),
+                                        SizedBox(
+                                          width: 20,
+                                        ),
+                                        SvgPicture.asset(
+                                          'assets/svgs/telenor.svg',
+                                          width: 20,
+                                          height: 18,
 
-                                      ),
-                                    ],
+                                        ),
+                                      ],
+                                    ),
                                   ),
-                                ),
-                                Icon(Icons.arrow_forward_ios),
-                              ],
+                                  Icon(Icons.arrow_forward_ios),
+                                ],
+                              ),
                             ),
                           ),
                         ),

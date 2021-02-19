@@ -7,7 +7,7 @@
 
 import 'package:blaja_app/common/constants.dart';
 import 'package:blaja_app/common/widget_properties.dart';
-import 'package:blaja_app/screens/signin_personal_info.dart';
+import 'file:///C:/Users/User/AndroidStudioProjects/blaja_app/lib/screens/signin/signin_personal_info.dart';
 import 'package:blaja_app/widgets/custom_outlined_button.dart';
 import 'package:blaja_app/widgets/generic_button.dart';
 import 'package:flutter/material.dart';

@@ -1,6 +1,6 @@
 import 'package:blaja_app/common/constants.dart';
 import 'package:blaja_app/common/widget_properties.dart';
-import 'package:blaja_app/screens/register_screen_fourth.dart';
+import 'file:///C:/Users/User/AndroidStudioProjects/blaja_app/lib/screens/register/register_screen_fourth.dart';
 import 'package:blaja_app/widgets/custome_text_view_bold.dart';
 
 import 'package:blaja_app/widgets/footer.dart';

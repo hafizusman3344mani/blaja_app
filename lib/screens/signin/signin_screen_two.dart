@@ -1,6 +1,7 @@
 import 'package:blaja_app/common/constants.dart';
 import 'package:blaja_app/common/widget_properties.dart';
-import 'package:blaja_app/screens/signin_screen_three.dart';
+import 'package:blaja_app/screens/dashboard/dashbord_home.dart';
+import 'file:///C:/Users/User/AndroidStudioProjects/blaja_app/lib/screens/signin/signin_screen_three.dart';
 import 'package:blaja_app/widgets/custom_outlined_button.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
@@ -45,10 +46,20 @@ class SignInTwo extends StatelessWidget {
                           children: [
                             Column(
                               children: [
-                                Image.asset(
-                                  'assets/images/man.png',
-                                  height: 100,
-                                  width: 100,
+                                GestureDetector(
+                                  onTap: () {
+                                    Navigator.push(
+                                      context,
+                                      MaterialPageRoute(
+                                        builder: (context) => DashBoardHome(),
+                                      ),
+                                    );
+                                  },
+                                  child: Image.asset(
+                                    'assets/images/man.png',
+                                    height: 100,
+                                    width: 100,
+                                  ),
                                 ),
                                 SizedBox(
                                   height: 5,
@@ -61,10 +72,20 @@ class SignInTwo extends StatelessWidget {
                             ),
                             Column(
                               children: [
-                                Image.asset(
-                                  'assets/images/girl.png',
-                                  height: 100,
-                                  width: 100,
+                                GestureDetector(
+                                  onTap: () {
+                                    Navigator.push(
+                                      context,
+                                      MaterialPageRoute(
+                                        builder: (context) => DashBoardHome(),
+                                      ),
+                                    );
+                                  },
+                                  child: Image.asset(
+                                    'assets/images/girl.png',
+                                    height: 100,
+                                    width: 100,
+                                  ),
                                 ),
                                 SizedBox(
                                   height: 5,
@@ -77,10 +98,20 @@ class SignInTwo extends StatelessWidget {
                             ),
                             Column(
                               children: [
-                                Image.asset(
-                                  'assets/images/boy.png',
-                                  height: 100,
-                                  width: 100,
+                                GestureDetector(
+                                  onTap: () {
+                                    Navigator.push(
+                                      context,
+                                      MaterialPageRoute(
+                                        builder: (context) => DashBoardHome(),
+                                      ),
+                                    );
+                                  },
+                                  child: Image.asset(
+                                    'assets/images/boy.png',
+                                    height: 100,
+                                    width: 100,
+                                  ),
                                 ),
                                 SizedBox(
                                   height: 5,
@@ -94,12 +125,17 @@ class SignInTwo extends StatelessWidget {
                           ],
                         ),
                       ),
-
                       Container(
                           margin: EdgeInsets.only(top: 30),
-                          child: CustomOutLinedButton(title: 'Manage Profile',onPressed: (){
-                            Navigator.push(context, MaterialPageRoute(builder: (context)=>SignInThree()));
-                          },))
+                          child: CustomOutLinedButton(
+                            title: 'Manage Profile',
+                            onPressed: () {
+                              Navigator.push(
+                                  context,
+                                  MaterialPageRoute(
+                                      builder: (context) => SignInThree()));
+                            },
+                          ))
                     ],
                   ),
                 ),
