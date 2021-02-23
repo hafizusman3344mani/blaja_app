@@ -13,7 +13,7 @@ class SignInPersonalInfo extends StatefulWidget {
 }
 
 class _SignInPersonalInfoState extends State<SignInPersonalInfo> {
-  String _selectedLocation;
+  String _selectedGender;
 
   List<String> _gender = ['Male', 'Female'];
   @override
@@ -183,23 +183,27 @@ class _SignInPersonalInfoState extends State<SignInPersonalInfo> {
                                             decoration: BoxDecoration(
                                               color: Color(0xFF4D4D4D),
                                               borderRadius:
-                                              BorderRadius.circular(3),
+                                                  BorderRadius.circular(3),
                                             ),
-
-                                          child: Icon(Icons.keyboard_arrow_down_rounded,color: Colors.white,size: 20,),),
+                                            child: Icon(
+                                              Icons.keyboard_arrow_down_rounded,
+                                              color: Colors.white,
+                                              size: 20,
+                                            ),
+                                          ),
                                           isExpanded: true,
                                           underline: Container(),
                                           hint: Text(
                                               'Gender'), // Not necessary for Option 1
-                                          value: _selectedLocation,
+                                          value: _selectedGender,
                                           onChanged: (newValue) {
                                             setState(() {
-                                              _selectedLocation = newValue;
+                                              _selectedGender = newValue;
                                             });
                                           },
                                           items: _gender.map((location) {
                                             return DropdownMenuItem(
-                                              child:  Text(location),
+                                              child: Text(location),
                                               value: location,
                                             );
                                           }).toList(),

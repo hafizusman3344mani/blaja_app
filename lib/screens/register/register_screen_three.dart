@@ -1,11 +1,9 @@
 import 'package:blaja_app/common/constants.dart';
 import 'package:blaja_app/common/widget_properties.dart';
-import 'file:///C:/Users/User/AndroidStudioProjects/blaja_app/lib/screens/register/register_screen_fourth.dart';
+import 'package:blaja_app/screens/register/register_screen_fourth.dart';
 import 'package:blaja_app/widgets/custome_text_view_bold.dart';
-
 import 'package:blaja_app/widgets/footer.dart';
 import 'package:blaja_app/widgets/generic_button.dart';
-import 'package:blaja_app/widgets/plan_list.dart';
 import 'package:flutter/material.dart';
 
 class RegisterScreenThree extends StatelessWidget {

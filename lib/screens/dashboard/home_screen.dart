@@ -11,8 +11,7 @@ class HomeScreen extends StatelessWidget {
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
             Row(
-              mainAxisAlignment:
-              MainAxisAlignment.spaceAround,
+              mainAxisAlignment: MainAxisAlignment.spaceAround,
               children: [
                 CustomCategoryContainer(
                   color: Color(0xFF2ACF2A),
@@ -35,8 +34,7 @@ class HomeScreen extends StatelessWidget {
               height: 50,
             ),
             Row(
-              mainAxisAlignment:
-              MainAxisAlignment.spaceAround,
+              mainAxisAlignment: MainAxisAlignment.spaceAround,
               children: [
                 CustomCategoryContainer(
                   color: Color(0xFFBD47DF),

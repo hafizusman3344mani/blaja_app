@@ -10,11 +10,18 @@ class CustomTextFormField extends StatelessWidget {
   final TextStyle textStyle;
   final TextStyle hintStyle;
 
-  const CustomTextFormField({this.hintText, this.borderColor,this.borderRadius,this.fillColor,this.cursorColor,this.textStyle, this.hintStyle});
+  const CustomTextFormField(
+      {this.hintText,
+      this.borderColor,
+      this.borderRadius,
+      this.fillColor,
+      this.cursorColor,
+      this.textStyle,
+      this.hintStyle});
   @override
   Widget build(BuildContext context) {
     return TextFormField(
-      style:textStyle,
+      style: textStyle,
       cursorColor: cursorColor,
       decoration: InputDecoration(
         focusColor: borderColor,
@@ -28,24 +35,23 @@ class CustomTextFormField extends StatelessWidget {
             width: 1,
             style: BorderStyle.solid,
           ),
-          borderRadius: BorderRadius.circular(borderRadius??0),
+          borderRadius: BorderRadius.circular(borderRadius ?? 0),
         ),
-
-        enabledBorder:OutlineInputBorder(
+        enabledBorder: OutlineInputBorder(
           borderSide: BorderSide(
             color: borderColor,
             width: 1,
             style: BorderStyle.solid,
           ),
-          borderRadius: BorderRadius.circular(borderRadius??0),
-        ) ,
+          borderRadius: BorderRadius.circular(borderRadius ?? 0),
+        ),
         border: OutlineInputBorder(
           borderSide: BorderSide(
             color: borderColor,
             width: 1,
             style: BorderStyle.solid,
           ),
-          borderRadius: BorderRadius.circular(borderRadius??0),
+          borderRadius: BorderRadius.circular(borderRadius ?? 0),
         ),
       ),
     );

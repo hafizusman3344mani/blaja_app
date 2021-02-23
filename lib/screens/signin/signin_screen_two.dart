@@ -1,10 +1,9 @@
 import 'package:blaja_app/common/constants.dart';
 import 'package:blaja_app/common/widget_properties.dart';
 import 'package:blaja_app/screens/dashboard/dashbord_home.dart';
-import 'file:///C:/Users/User/AndroidStudioProjects/blaja_app/lib/screens/signin/signin_screen_three.dart';
+import 'package:blaja_app/screens/signin/signin_screen_three.dart';
 import 'package:blaja_app/widgets/custom_outlined_button.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_svg/flutter_svg.dart';
 
 class SignInTwo extends StatelessWidget {
   @override
